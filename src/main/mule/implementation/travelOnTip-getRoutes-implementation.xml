@@ -13,7 +13,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	"transactionId" : vars.transactionId
 }]]]></http:headers>
 		</http:request>
-		<ee:transform doc:name="Transform Message" doc:id="254eacff-4d27-4407-9e66-cc882ea42f48" >
+		<ee:transform doc:name="T" doc:id="254eacff-4d27-4407-9e66-cc882ea42f48" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
