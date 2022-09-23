@@ -6,7 +6,7 @@
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<sub-flow name="travelOnTip-getSchedules-implementationSub_Flow" doc:id="aee6ab28-52d8-46ac-a2fb-6365804453f9" >
-		<http:request method="GET" doc:name="Request" doc:id="44ffa638-e8d9-45db-b8a3-b1ad5ab088b1" config-ref="HTTP_Request_configuration_travelOnTip" path="${http.request.schedulesPath}">
+		<http:request method="GET" doc:name="Calling the External System API for Schedules in TravelOnTip" doc:id="44ffa638-e8d9-45db-b8a3-b1ad5ab088b1" config-ref="HTTP_Request_configuration_travelOnTip" path="${http.request.schedulesPath}">
 			<http:headers><![CDATA[#[output application/java
 ---
 {
